@@ -1,0 +1,133 @@
+html{
+  height: 100%;
+  cursor: url(img/scroll.svg), auto;
+}
+body{
+  height: 100%;
+}
+/*           공통클래스 스타일           */
+.wrap{
+  width: 1440px;
+  margin: 0 auto;
+}
+/*           상단 영역           */
+header{
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+  z-index: 1;
+  height: 90px;
+}
+header .wrap{
+}
+header div.wrap ul{
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+li{
+}
+header div.wrap ul li a{
+  font-size: 22px;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 90px;
+  align-items: center;
+  transition: background-color .5s;
+}
+header div.wrap ul li a:hover{
+  background-color: #2AABE4;
+  color: white;
+}
+/*           타이틀 영역           */
+section#title{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/reallogo.jpg);
+  position: relative;
+}
+section#title div.wrap{
+  width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+section#title div.wrap h1{
+  font-size: 150px;
+  text-align: center;
+  display: inline-block;
+}
+section#title div.wrap a.scroll{
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%; 
+  transform: translatex(-50%);
+  z-index: 2;
+  display: inline-block;
+  transition: opacity .3s;
+  background-image: url(img/sc.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
+  width: 75px;
+  height: 75px;
+}
+.scroll:hover {
+  opacity:.5;
+}
+main{
+  height: 2700px;
+}
+/* 프로필 영역 */
+#profile{
+  height: 900px;
+  background-color: #2AABE4;
+}
+#profile .wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+}
+#profile .wrap h2{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+#profile .wrap figure{
+}
+#profile .wrap figure img {
+  padding-left: 150px;
+}
+#profile .wrap figure figurecaption {
+}
+#profile .wrap div {
+}
+#profile .wrap div h3 {
+}
+#profile .wrap div p {
+}
+#profile .wrap div h4 {
+}
+#profile .wrap div ul {
+}
+#profile .wrap div ul li {
+}
+/* 포트폴리오 영역 */
+main #portfolio{
+  height: 900px;
+}
+main #portfolio .wrap{
+}
+main #portfolio .wrap h3{
+  
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Do Hyeon', sans-serif;
+  line-height: 5;
+}
